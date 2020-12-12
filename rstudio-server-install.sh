@@ -2,17 +2,16 @@
   
 CYAN='\033[0;36m'
 NC='\033[0m'
-sudo apt update;
 
 ## install jre and jdk
 sudo apt install -y default-jre default-jdk
 ## install r
 sudo apt install -y apt-transport-https software-properties-common;
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9;
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/';
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/';
+sudo apt dist-upgrade;
 sudo apt update;
-sudo apt install -y r-base build-essential libssh-dev;
-
+sudo apt install -y r-base r-base-core r-recommended build-essential libssh-dev;
 
 ## install rstudio-server
 sudo apt-get install gdebi-core;
