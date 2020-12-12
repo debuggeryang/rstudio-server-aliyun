@@ -11,7 +11,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD
 sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/';
 sudo apt dist-upgrade;
 sudo apt update;
-sudo apt install -y r-base r-base-core r-recommended build-essential libssh-dev;
+sudo apt install -y r-base r-base-core r-recommended build-essential libssh-dev libgit2-dev libcurl4-gnutls-dev libxml2-dev libssl-dev libgdal-dev libproj-dev libgeos++-dev;
 
 ## install rstudio-server
 sudo apt-get install gdebi-core;
